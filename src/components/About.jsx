@@ -6,12 +6,12 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-6">
           <h2 className="font-bold text-3xl mb-4 animate-fade-in">About me</h2>
-          <div className="w-20 h-1 bg-indigo-600 mx-auto animation-fade-in delay-150"></div>
+          <div className="w-20 h-1 bg-indigo-600 mx-auto animate-fade-in delay-150"></div>
         </div>
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/3 animate-fade-in delay-200">
             <div className="text-center">
-              <img src="src/assets/profile.webp" alt="Profile" className="w-50 h-50 mt-10 rounded-full shadow-xl shadow-slate-950 border-indigo-300 border-4"/>
+              <img src="src/assets/profile.webp" alt="Profile" className="w-full min-h-50 max-h-full ml-3 mt-10 rounded-full shadow-xl shadow-slate-950 border-indigo-300 border-4"/>
             </div>
           </div>
           <div className="md:w-2/3 animate-fade-in delay-300">

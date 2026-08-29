@@ -11,7 +11,7 @@ const initParticles = async (engine) => {
 export default function Home() {
   return (
     <ParticlesProvider init={initParticles}>
-      <section className="relative min-h-screen flex items-center justify-center landscape:pt-14">
+      <section className="relative min-h-screen flex items-center justify-center landscape:pt-14" id="home">
         <Particles
           id="tsparticles"
           options={particleOptions}

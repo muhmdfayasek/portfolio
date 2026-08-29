@@ -26,7 +26,7 @@ export default function Navbar() {
             <ul className="flex items-center justify-between flex-col mt-4 lg:mt-0 lg:ml-auto lg:flex-row gap-10">
               <li>
                 <a
-                  href="#"
+                  href="#home"
                   class="flex items-center justify-between text-white text-[15px] lg:text-base font-medium hover:text-slate-300 hover:border-b-2 hover:border-indigo-400 transition-all duration-500 mb-2 lg:mr-7 md:mb-0 md:mr-3"
                 >
                   Home
@@ -34,7 +34,7 @@ export default function Navbar() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#about"
                   class="flex items-center justify-between text-white text-[15px] lg:text-base font-medium hover:text-slate-300 hover:border-b-2 hover:border-indigo-400 transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
                 >
                   About
@@ -42,7 +42,7 @@ export default function Navbar() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#skills"
                   class="flex items-center justify-between text-white text-[15px] lg:text-base font-medium hover:text-slate-300 hover:border-b-2 hover:border-indigo-400 transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
                 >
                   Skills
@@ -50,7 +50,7 @@ export default function Navbar() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#projects"
                   class="flex items-center justify-between text-white text-[15px] lg:text-base font-medium hover:text-slate-300 hover:border-b-2 hover:border-indigo-400 transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
                 >
                   Projects
@@ -58,7 +58,7 @@ export default function Navbar() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#contact"
                   class="flex items-center justify-between text-white text-[15px] lg:text-base font-medium hover:text-slate-300 hover:border-b-2 hover:border-indigo-400 transition-all duration-500 mb-2 lg:my-7 md:mb-0 md:mr-3"
                 >
                   Contact
