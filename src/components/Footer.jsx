@@ -34,7 +34,7 @@ export default function Footer() {
         </ul>
       </div>
         <div className="text-sm mx-5 mb-5 mt-2 text-center">
-          <a href="">zed.dev</a> | <a href="">Tailwind CSS</a> | <a href="">Iconify</a> | <a href="">Devicon</a> | <a href="">selfh.st</a> | <a href="">Bootstrap Icons</a> | <a href="">Akar Icons</a> | <a href="">Font Awesome 6</a>
+          <a href="">zed.dev</a> | <a href="">Tailwind CSS</a> | <a href="">Iconify</a> [<a href="">Devicon</a> | <a href="">selfh.st</a> | <a href="">Bootstrap Icons</a> | <a href="">Akar Icons</a> | <a href="">Font Awesome 6</a> | <a href="">Carbon</a>]
         </div>
     </footer>
   );

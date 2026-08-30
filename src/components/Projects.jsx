@@ -1,7 +1,7 @@
 export default function Projects() {
   return (
     <section id="projects" className="py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-6">
           <h2 className="text-3xl font-bold mb-4 animate-fade-in">Projects</h2>
           <div className="w-20 h-1 bg-indigo-600 mx-auto animate-fade-in delay-100"></div>
