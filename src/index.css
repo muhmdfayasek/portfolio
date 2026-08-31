@@ -12,3 +12,15 @@ footer {
 .project-card:hover .project-overlay {
     opacity: 0.7;
 }
+
+@media (max-height: 502px) {
+    .chevron-down {
+        display: none;
+    }
+}
+
+@media (max-height: 590px) {
+    .chevron-down {
+        bottom: 1.25rem;
+    }
+}

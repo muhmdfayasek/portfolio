@@ -3,10 +3,10 @@ import { useState } from "react";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <nav className="fixed top-0 border-solid border-gray-600 w-full border-b py-3 bg-gray-900 z-50 shadow-2xl">
+    <nav className="fixed top-0 border-solid border-gray-600 w-full lg:h-17 border-b py-2 lg:py-0 bg-gray-950 z-50 shadow-2xl">
       <div className="mx-auto max-w-7xl px-4">
         <div className="w-full flex flex-col lg:flex-row">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center lg:h-17">
             <span className="font-bold text-xl md:px-10 md:text-2xl p-2">
               muhmdfayasek
             </span>
@@ -23,7 +23,7 @@ export default function Navbar() {
             </button>
           </div>
           <div className={`${isOpen ? 'block' : 'hidden'} w-full lg:flex lg:pl-11 lg:justify-end lg:px-10`}>
-            <ul className="flex items-center justify-between flex-col mt-4 lg:mt-0 lg:ml-auto lg:flex-row gap-10">
+            <ul className="flex items-center justify-between flex-col mt-4 lg:mt-0 lg:ml-auto lg:flex-row gap-10 lg:h-17">
               <li>
                 <a
                   href="#home"

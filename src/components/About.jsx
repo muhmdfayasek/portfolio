@@ -2,7 +2,7 @@ import { Icon } from "@iconify/react";
 
 export default function About() {
   return (
-    <section id="about" className="py-20">
+    <section id="about" className="py-20 border-b border-b-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-6">
           <h2 className="font-bold text-3xl mb-4 animate-fade-in">About me</h2>
