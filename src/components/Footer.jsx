@@ -2,7 +2,7 @@ import { Icon } from "@iconify/react";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-800 rounded-2xl border border-slate-800 m-2 text-gray-400">
+    <footer className="bg-surface rounded-2xl border border-border m-2 text-text-muted">
       <div className="w-full mx-auto max-w-7xl p-4 md:flex md:items-center md:justify-between">
         <span className="text-md text-body sm:text-center">© 2026 <a href="#" className="hover:underline"> muhmdfayasek</a>. All Rights Reserved.
         </span>
