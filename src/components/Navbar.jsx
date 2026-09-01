@@ -7,9 +7,9 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-4">
         <div className="w-full flex flex-col lg:flex-row">
           <div className="flex justify-between items-center lg:h-17">
-            <span className="font-bold text-xl md:px-10 md:text-2xl p-2">
+            <a href="/" className="font-bold text-xl md:px-10 md:text-2xl p-2">
               muhmdfayasek
-            </span>
+            </a>
             <button
               className="lg:hidden ml-auto p-2"
               aria-label="Toggle menu"

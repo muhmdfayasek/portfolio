@@ -34,7 +34,16 @@ export default function Footer() {
         </ul>
       </div>
         <div className="text-sm mx-5 mb-5 mt-2 text-center">
-          <a href="">zed.dev</a> | <a href="">Tailwind CSS</a> | <a href="">Iconify</a> [<a href="">Devicon</a> | <a href="">selfh.st</a> | <a href="">Bootstrap Icons</a> | <a href="">Akar Icons</a> | <a href="">Font Awesome 6</a> | <a href="">Carbon</a>]
+        <a href="https://zed.dev/">zed.dev </a> | 
+        <a href="https://tailwindcss.com/"> Tailwind CSS </a> |
+        <a href="https://flowbite.com/"> Flowbite </a> |
+        <a href="https://iconify.design/"> Iconify </a>
+        [<a href="https://devicon.dev/"> Devicon </a> |
+        <a href="https://selfhost.st/"> selfh.st </a> |
+        <a href="https://icons.getbootstrap.com/"> Bootstrap Icons </a> |
+        <a href="https://akaricons.com/"> Akar Icons </a> |
+        <a href="https://fontawesome.com/"> Font Awesome 6 </a> |
+        <a href="https://carbon.design/"> Carbon </a>]
         </div>
     </footer>
   );

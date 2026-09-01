@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react";
+import { IconRing } from "./Parts";
 
 export default function Contact() {
   return (
@@ -66,9 +67,7 @@ export default function Contact() {
 
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="bg-accent-muted p-3 rounded-full mr-4">
-                    <Icon icon="carbon:location" className="text-xl" />
-                  </div>
+                  <IconRing icon="carbon:location" size="text-xl"/>
                   <div>
                     <h4 className="font-semibold text-text-primary">Location</h4>
                     <p className="text-text-tertiary">Pattambi, Kerala, India</p>
@@ -76,9 +75,7 @@ export default function Contact() {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-accent-muted p-3 rounded-full mr-4">
-                    <Icon icon="carbon:email" className="text-xl" />
-                  </div>
+                  <IconRing icon="carbon:email" size="text-xl"/>
                   <div>
                     <h4 className="font-semibold text-text-primary">Email</h4>
                     <p className="text-text-tertiary">muhmdfayasek@outlook.com</p>
@@ -86,11 +83,9 @@ export default function Contact() {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-accent-muted p-3 rounded-full mr-4">
-                    <a href="https://t.me/muhmdfayasek">
-                      <Icon icon="bi:telegram" className="text-xl" />
-                    </a>
-                  </div>
+                  <a href="https://t.me/muhmdfayasek">
+                    <IconRing icon="bi:telegram" size="text-xl" />
+                  </a>
                   <div>
                     <h4 className="font-semibold text-text-primary">Message</h4>
                     <p className="text-text-tertiary">t.me/muhmdfayasek</p>

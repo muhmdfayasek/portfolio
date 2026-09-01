@@ -1,8 +1,8 @@
-import { Icon } from "@iconify/react";
+import { IconRing } from "./Parts";
 
 export default function About() {
   return (
-    <section id="about" className="py-20 border-b border-b-border bg-background min-h-screen">
+    <section id="about" className="py-20 border-b border-b-border bg-background min-h-screen flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-6">
           <h2 className="font-bold text-3xl mb-4 animate-fade-in">About me</h2>
@@ -15,16 +15,14 @@ export default function About() {
             </div>
           </div>
           <div className="md:w-2/3 animate-fade-in delay-300">
-            <h3 className="font-semibold text-2xl mb-4">Wait, Who's This Guy?</h3>
+            <h3 className="font-semibold text-2xl mb-4 mt-10">Wait, Who's This Guy?</h3>
             <p className="text-text-tertiary mb-6">
               I’m Muhammed Fayas EK, a BCA student and developer who enjoys turning ideas into real, working projects. I like learning by building, experimenting with new technologies, and occasionally creating problems just so I can figure out how to fix them. I’m also interested in open source and enjoy exploring, contributing to, and learning from the work of developers around the world.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="flex items-start">
-                <div className="bg-accent-muted p-3 rounded-full mr-4">
-                  <Icon icon="fa6-solid:graduation-cap" className="text-md"/>
-                </div>
+                <IconRing icon="fa6-solid:graduation-cap" size="text-md"/>
                 <div>
                   <h4 className="font-semibold text-text-primary">Education</h4>
                   <p className="text-text-secondary">
@@ -35,9 +33,7 @@ export default function About() {
               </div>
               
               <div className="flex items-start">
-                <div className="bg-accent-muted p-3 rounded-full mr-4">
-                  <Icon icon="fa6-solid:briefcase" className="text-md"/>
-                </div>
+                <IconRing icon="fa6-solid:briefcase" size="text-md"/>
                 <div>
                   <h4 className="font-semibold text-text-primary">Experience</h4>
                   <p className="text-text-secondary">
@@ -47,9 +43,7 @@ export default function About() {
               </div>
               
               <div className="flex items-start">
-                <div className="bg-accent-muted p-3 rounded-full mr-4">
-                  <Icon icon="fa6-solid:code" className="text-md"/>
-                </div>
+                <IconRing icon="fa6-solid:code" size="text-md"/>
                 <div>
                   <h4 className="font-semibold text-text-primary">Specialization</h4>
                   <p className="text-text-secondary">
@@ -60,9 +54,7 @@ export default function About() {
               </div>
               
               <div className="flex items-start">
-                <div className="bg-accent-muted p-3 rounded-full mr-4">
-                  <Icon icon="fa6-solid:globe" className="text-md"/>
-                </div>
+                <IconRing icon="fa6-solid:globe" size="text-md"/>
                 <div>
                   <h4 className="font-semibold text-text-primary">Languages</h4>
                   <p className="text-text-secondary">
