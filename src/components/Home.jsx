@@ -13,6 +13,7 @@ export default function Home() {
       className="relative min-h-screen flex items-center justify-center landscape:pt-14 border-b border-b-border"
       id="home"
     >
+      {/* Particles background */}
       <ParticlesProvider init={initParticles}>
         <Particles
           id="tsparticles"

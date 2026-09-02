@@ -15,11 +15,13 @@ export default function About() {
             </div>
           </div>
           <div className="md:w-2/3 animate-fade-in delay-300">
+            {/* Introduction */}
             <h3 className="font-semibold text-2xl mb-4 mt-10">Wait, Who's This Guy?</h3>
             <p className="text-text-tertiary mb-6">
               I’m Muhammed Fayas EK, a BCA student and developer who enjoys turning ideas into real, working projects. I like learning by building, experimenting with new technologies, and occasionally creating problems just so I can figure out how to fix them. I’m also interested in open source and enjoy exploring, contributing to, and learning from the work of developers around the world.
             </p>
-            
+
+            {/* Education, Experience and Skills */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="flex items-start">
                 <IconRing icon="fa6-solid:graduation-cap" size="text-md"/>
@@ -27,7 +29,7 @@ export default function About() {
                   <h4 className="font-semibold text-text-primary">Education</h4>
                   <p className="text-text-secondary">
                     Bachelor of Computer Applications<br />
-                    SAFA College of Arts and Science Pookattiri
+                    SAFA College of Arts and Science Pookattiri <span>(Ongoing)</span>
                   </p>
                 </div>
               </div>

@@ -1,6 +1,18 @@
 import { Icon } from "@iconify/react";
 import { IconRing } from "./Parts";
 
+// Social Media Icons
+function SocialIcon(props) {
+  return (
+    <a
+      href={props.link}
+      className="text-text-primary w-10 h-10 bg-accent-muted rounded-full flex items-center justify-center">
+      <Icon icon={props.icon} />
+      <span className="sr-only">{props.label}</span>
+    </a>
+  );
+}
+
 export default function Contact() {
   return (
     <section id="contact" className="py-20 border-b border-b-border bg-background min-h-screen">
@@ -13,6 +25,7 @@ export default function Contact() {
         </div>
         
         <div className="flex flex-col md:flex-row gap-12 mt-15">
+          
           {/* Contact Form */}
           <div className="md:w-1/2 animate-fade-in delay-200">
             <form className="space-y-6">
@@ -60,6 +73,7 @@ export default function Contact() {
               <button type="submit" className="w-full px-6 py-3 bg-accent rounded-lg shadow-lg transition hover:bg-text-primary hover:text-text-inverse">Send Message</button>
             </form>
           </div>
+          
           {/* Contact Info */}
           <div className="md:w-1/2 animate-fade-in delay-300">
             <div className="p-8 rounded-xl shadow-lg h-full bg-surface-elevated">
@@ -92,46 +106,24 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-              
+
+              {/* Social media Profiles */}
               <div className="mt-8">
                 <h4 className="font-semibold text-text-primary">Follow Me</h4>
                 <div className="flex space-x-4 mt-4">
-                  <a
-                    href=""
-                    className="text-text-primary w-10 h-10 bg-accent-muted rounded-full flex items-center justify-center">
-                    <Icon icon="bi:github" />
-                    <span className="sr-only">Github Profile</span>
-                  </a>
-                  <a
-                    href=""
-                    className="text-text-primary w-10 h-10 bg-accent-muted rounded-full flex items-center justify-center">
-                    <Icon icon="bi:linkedin" />
-                    <span className="sr-only">LinkedIn Profile</span>
-                  </a>
-                  <a
-                    href=""
-                    className="text-text-primary w-10 h-10 bg-accent-muted rounded-full flex items-center justify-center">
-                    <Icon icon="bi:twitter-x" />
-                    <span className="sr-only">X(Twitter) Profile</span>
-                  </a>
-                  <a
-                    href=""
-                    className="text-text-primary w-10 h-10 bg-accent-muted rounded-full flex items-center justify-center">
-                    <Icon icon="bi:instagram" />
-                    <span className="sr-only">Instagram Profile</span>
-                  </a>
-                  <a
-                    href=""
-                    className="text-text-primary w-10 h-10 bg-accent-muted rounded-full flex items-center justify-center">
-                    <Icon icon="bi:bluesky" />
-                    <span className="sr-only">Bluesky Profile</span>
-                  </a>
-                  <a
-                    href=""
-                    className="text-text-primary w-10 h-10 bg-accent-muted rounded-full flex items-center justify-center">
-                    <Icon icon="bi:facebook" />
-                    <span className="sr-only">Facebook Profile</span>
-                  </a>
+                  
+                  <SocialIcon link="https://github.com/muhmdfayasek" icon="bi:github" label="Github Profile" />
+                  
+                  <SocialIcon link="https://www.linkedin.com/in/muhmdfayasek" icon="bi:linkedin" label="LinkedIn Profile" />
+                  
+                  <SocialIcon link="https://www.instagram.com/muhmdfayasek" icon="bi:instagram" label="Instagram Profile" />
+                  
+                  <SocialIcon link="https://bsky.app/profile/muhmdfayasek.bsky.social" icon="bi:bluesky" label="Bluesky Profile" />
+                  
+                  <SocialIcon link="https://www.facebook.com/muhmdfayasek" icon="bi:facebook" label="Facebook Profile" />
+                  
+                  <SocialIcon link="https://x.com/muhmdfayasek" icon="bi:twitter-x" label="X(Twitter) Profile" />
+                  
                 </div>
               </div>
             </div>

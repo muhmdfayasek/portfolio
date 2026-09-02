@@ -1,3 +1,33 @@
+// ToolChip
+function ToolChip({ label }) {
+  return (
+    <span className="bg-accent-muted text-text-secondary px-3 py-1 rounded-full text-xs"
+    >{label}</span>
+  );
+}
+
+// ProjectCard
+function ProjectCard(props) {
+  return (
+    <div className="project-card rounded-xl overflow-hidden animate-fade-in delay-200 shadow-lg bg-surface-elevated">
+      <div className="relative">
+        <img src={props.image} alt="project-image" className="w-full h-full object-cover" />
+        
+        <div className="project-overlay absolute inset-0 bg-accent/90 flex items-center justify-center opacity-0 transition duration-300">
+          <a href={props.link} className="text-text-primary bg-accent-soft px-4 py-2 border border-text-primary rounded-lg hover:bg-white hover:text-text-inverse">View Details</a>  
+        </div>
+      </div>
+      <div className="p-6">
+        <h3 className="text-xl font-semibold mb-2">{props.title}</h3>
+        <p className="text-gray-300 mb-4">{props.description}</p>
+        <div className="flex flex-wrap gap-2">
+          {props.children}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Projects() {
   return (
     <section id="projects" className="py-20 border-b border-b-border bg-background min-h-screen">
@@ -11,25 +41,19 @@ export default function Projects() {
         </div>
         {/* Projects */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="project-card rounded-xl overflow-hidden animate-fade-in delay-200 shadow-lg bg-surface-elevated">
-            <div className="relative">
-              <img src="/src/assets/qeydrop.webp" alt="project-image" className="w-full h-full object-cover" />
-              
-              <div className="project-overlay absolute inset-0 bg-accent/90 flex items-center justify-center opacity-0 transition duration-300">
-                <a href="https://github.com/muhmdfayasek/QeyDrop" className="text-text-primary bg-accent-soft px-4 py-2 border border-text-primary rounded-lg hover:bg-white hover:text-text-inverse">View Details</a>  
-              </div>
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2">QeyDrop</h3>
-              <p className="text-gray-300 mb-4">A vibecoded platform for content creators to share links with audience</p>
-              <div className="flex flex-wrap gap-2">
-                <span className="bg-accent-muted text-text-secondary px-3 py-1 rounded-full text-xs">React</span>
-                <span className="bg-accent-muted text-text-secondary px-3 py-1 rounded-full text-xs">Supabase</span>
-                <span className="bg-accent-muted text-text-secondary px-3 py-1 rounded-full text-xs">PostgreSQL</span>
-                <span className="bg-accent-muted text-text-secondary px-3 py-1 rounded-full text-xs">Vibecode</span>
-              </div>
-            </div>
-          </div>
+          
+          <ProjectCard
+            image="/src/assets/qeydrop.webp"
+            link="https://github.com/muhmdfayasek/QeyDrop"
+            title="QeyDrop"
+            description="A vibecoded platform for content creators to share links with audience"
+          >
+            <ToolChip label="React" />
+            <ToolChip label="Supabase" />
+            <ToolChip label="PostgreSQL" />
+            <ToolChip label="Vibecode" />
+          </ProjectCard>
+          
         </div>
         <div className="text-center mt-20 animate-fade-in delay-300">
           <a

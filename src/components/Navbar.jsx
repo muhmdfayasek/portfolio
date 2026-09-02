@@ -10,6 +10,8 @@ export default function Navbar() {
             <a href="/" className="font-bold text-xl md:px-10 md:text-2xl p-2">
               muhmdfayasek
             </a>
+
+            {/* Toggle menu */}
             <button
               className="lg:hidden ml-auto p-2"
               aria-label="Toggle menu"
@@ -23,6 +25,8 @@ export default function Navbar() {
             </button>
           </div>
           <div className={`${isOpen ? 'block' : 'hidden'} w-full lg:flex lg:pl-11 lg:justify-end lg:px-10`}>
+
+            {/* Sections */}
             <ul className="flex items-center justify-between flex-col mt-4 lg:mt-0 lg:ml-auto lg:flex-row gap-10 lg:h-17">
               <li>
                 <a

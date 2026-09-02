@@ -1,5 +1,15 @@
 import { Icon } from "@iconify/react";
 
+// SkillCard
+function SkillCard({ icon, title }) {
+  return (
+    <div className="animate-fade-in delay-200 border border-border flex flex-col justify-center items-center p-5 hover:border-accent-hover hover:bg-surface-hover transition">
+      <Icon icon={icon} className="text-5xl" />
+      <p className="text-text-tertiary mt-2">{title}</p>
+    </div>
+  );
+}
+
 export default function Skills() {
   return (
     <section id="skills" className="py-20 border-b border-b-border bg-background min-h-screen">
@@ -13,80 +23,21 @@ export default function Skills() {
         </div>
         {/* Languages and skills */}
         <div className="grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6">
-          <div className="animate-fade-in delay-200 border border-border flex flex-col justify-center items-center p-5 hover:border-accent-hover hover:bg-surface-hover transition">
-            <Icon icon="devicon:javascript" className="text-5xl" />
-            <p className="text-text-tertiary mt-2">JavaScript</p>
-          </div>
-          
-          <div className="animate-fade-in delay-200 border border-border flex flex-col justify-center items-center p-5 hover:border-accent-hover hover:bg-surface-hover transition">
-            <Icon icon="devicon:react" className="text-5xl" />
-            <p className="text-text-tertiary mt-2">React</p>
-          </div>
-          
-          <div className="animate-fade-in delay-200 border border-border flex flex-col justify-center items-center p-5 hover:border-accent-hover hover:bg-surface-hover transition">
-            <Icon icon="devicon:html5" className="text-5xl" />
-            <p className="text-text-tertiary mt-2">HTML5</p>
-          </div>
-          
-          <div className="animate-fade-in delay-200 border border-border flex flex-col justify-center items-center p-5 hover:border-accent-hover hover:bg-surface-hover transition">
-            <Icon icon="devicon:css3" className="text-5xl" />
-            <p className="text-text-tertiary mt-2">CSS3</p>
-          </div>
-
-          <div className="animate-fade-in delay-200 border border-border flex flex-col justify-center items-center p-5 hover:border-accent-hover hover:bg-surface-hover transition">
-            <Icon icon="devicon:linux" className="text-5xl" />
-            <p className="text-text-tertiary mt-2">Linux</p>
-          </div>
-
-          <div className="animate-fade-in delay-200 border border-border flex flex-col justify-center items-center p-5 hover:border-accent-hover hover:bg-surface-hover transition">
-            <Icon icon="devicon:c" className="text-5xl" />
-            <p className="text-text-tertiary mt-2">C</p>
-          </div>
-
-          <div className="animate-fade-in delay-200 border border-border flex flex-col justify-center items-center p-5 hover:border-accent-hover hover:bg-surface-hover transition">
-            <Icon icon="devicon:cplusplus" className="text-5xl" />
-            <p className="text-text-tertiary mt-2">C++</p>
-          </div>
-
-          <div className="animate-fade-in delay-200 border border-border flex flex-col justify-center items-center p-5 hover:border-accent-hover hover:bg-surface-hover transition">
-            <Icon icon="devicon:python" className="text-5xl" />
-            <p className="text-text-tertiary mt-2">Python</p>
-          </div>
-
-          <div className="animate-fade-in delay-200 border border-border flex flex-col justify-center items-center p-5 hover:border-accent-hover hover:bg-surface-hover transition">
-            <Icon icon="devicon:tailwindcss" className="text-5xl" />
-            <p className="text-text-tertiary mt-2">Tailwind</p>
-          </div>
-
-          <div className="animate-fade-in delay-200 border border-border flex flex-col justify-center items-center p-5 hover:border-accent-hover hover:bg-surface-hover transition">
-            <Icon icon="devicon:bootstrap" className="text-5xl" />
-            <p className="text-text-tertiary mt-2">Bootstrap</p>
-          </div>
-
-          <div className="animate-fade-in delay-200 border border-border flex flex-col justify-center items-center p-5 hover:border-accent-hover hover:bg-surface-hover transition">
-            <Icon icon="devicon:figma" className="text-5xl" />
-            <p className="text-text-tertiary mt-2">Figma</p>
-          </div>
-
-          <div className="animate-fade-in delay-200 border border-border flex flex-col justify-center items-center p-5 hover:border-accent-hover hover:bg-surface-hover transition">
-            <Icon icon="devicon-plain:wordpress" className="text-5xl" />
-            <p className="text-text-tertiary mt-2">WordPress</p>
-          </div>
-
-          <div className="animate-fade-in delay-200 border border-border flex flex-col justify-center items-center p-5 hover:border-accent-hover hover:bg-surface-hover transition">
-            <Icon icon="simple-icons:penpot" className="text-5xl" />
-            <p className="text-text-tertiary mt-2">Penpot</p>
-          </div>
-
-          <div className="animate-fade-in delay-200 border border-border flex flex-col justify-center items-center p-5 hover:border-accent-hover hover:bg-surface-hover transition">
-            <Icon icon="devicon:supabase" className="text-5xl" />
-            <p className="text-text-tertiary mt-2">Supabase</p>
-          </div>
-
-          <div className="animate-fade-in delay-200 border border-border flex flex-col justify-center items-center p-5 hover:border-accent-hover hover:bg-surface-hover transition">
-            <Icon icon="selfhst:n8n" className="text-5xl" />
-            <p className="text-text-tertiary mt-2">n8n</p>
-          </div>
+          <SkillCard icon="devicon:javascript" title="JavaScript" />
+          <SkillCard icon="devicon:react" title="React" />
+          <SkillCard icon="devicon:html5" title="HTML5" />
+          <SkillCard icon="devicon:css3" title="CSS3" />
+          <SkillCard icon="devicon:linux" title="Linux" />
+          <SkillCard icon="devicon:c" title="C" />
+          <SkillCard icon="devicon:cplusplus" title="C++" />
+          <SkillCard icon="devicon:python" title="Python" />
+          <SkillCard icon="devicon:tailwindcss" title="Tailwind" />
+          <SkillCard icon="devicon:bootstrap" title="Bootstrap" />
+          <SkillCard icon="devicon:figma" title="Figma" />
+          <SkillCard icon="devicon-plain:wordpress" title="WordPress" />
+          <SkillCard icon="simple-icons:penpot" title="Penpot" />
+          <SkillCard icon="devicon:supabase" title="Supabase" />
+          <SkillCard icon="selfhst:n8n" title="n8n" />
         </div>
       </div>
     </section>

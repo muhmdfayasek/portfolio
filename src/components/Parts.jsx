@@ -43,13 +43,5 @@ function IconRing({ icon, size = "text-xl"}) {
   );
 }
 
-// ------------- Tooltip -------------
-function Tooltip(props) {
-  return (
-    <div id={props.id} className="tooltip">
-      <p>{props.text}</p>
-    </div>
-  );
-}
 
-export { IconRing, BackToTopBtn, Tooltip };
+export { IconRing, BackToTopBtn };

@@ -6,6 +6,8 @@ export default function Footer() {
       <div className="w-full mx-auto max-w-7xl p-4 md:flex md:items-center md:justify-between">
         <span className="text-md text-body sm:text-center">© 2026 <a href="#" className="hover:underline"> muhmdfayasek</a>. All Rights Reserved.
         </span>
+        
+        {/* Social media Profiles */}
         <ul className="flex flex-wrap justify-end items-center mt-3 mb-3 text-md font-medium text-body">
           <li className="m-2.5 h-0">
             <a href="#" className="hover:underline me-4 md:me-6">
@@ -33,6 +35,8 @@ export default function Footer() {
           </li>
         </ul>
       </div>
+      
+      {/* Tools and other resouces i used in this project */}
         <div className="text-sm mx-5 mb-5 mt-2 text-center">
         <a href="https://zed.dev/">zed.dev </a> | 
         <a href="https://tailwindcss.com/"> Tailwind CSS </a> |
