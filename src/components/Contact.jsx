@@ -31,7 +31,7 @@ export default function Contact() {
             <form className="space-y-6">
               <div>
                 <label
-                  for="name"
+                  htmlFor="name"
                   className="block text-sm font-medium text-text-secondary mb-1"
                 >Name</label>
                 <input
@@ -41,7 +41,7 @@ export default function Contact() {
               </div>
               <div>
                 <label
-                  for="email"
+                  htmlFor="email"
                   className="block text-sm font-medium text-text-secondary mb-1"
                 >Email Address</label>
                 <input
@@ -51,7 +51,7 @@ export default function Contact() {
               </div>
               <div>
                 <label
-                  for="subject"
+                  htmlFor="subject"
                   className="block text-sm font-medium text-text-secondary mb-1"
                 >Subject</label>
                 <input
@@ -61,7 +61,7 @@ export default function Contact() {
               </div>
               <div>
                 <label
-                  for="message"
+                  htmlFor="message"
                   className="block text-sm font-medium text-text-secondary mb-1"
                 >Message</label>
                 <textarea

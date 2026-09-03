@@ -39,13 +39,13 @@ export default function Home() {
               <div className="flex justify-center gap-8 mt-4 pt-2">
                 <a
                   href="#contact"
-                  class="px-6 py-3 bg-gray-500 text-text-primary rounded-lg hover:bg-text-primary hover:text-text-inverse transition shadow-lg"
+                  className="px-6 py-3 bg-gray-500 text-text-primary rounded-lg hover:bg-text-primary hover:text-text-inverse transition shadow-lg"
                 >
                   Let's Talk
                 </a>
                 <a
                   href="#projects"
-                  class="px-6 py-3 border border-text-primary rounded-lg hover:bg-text-primary hover:text-text-inverse transition"
+                  className="px-6 py-3 border border-text-primary rounded-lg hover:bg-text-primary hover:text-text-inverse transition"
                 >
                   View Projects
                 </a>
@@ -53,8 +53,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div class="absolute bottom-10 left-0 right-0 text-center chevron-down">
-          <a href="#about" class="inline-block animate-bounce">
+        <div className="absolute bottom-10 left-0 right-0 text-center chevron-down">
+          <a href="#about" className="inline-block animate-bounce">
             <Icon icon="akar-icons:chevron-down" className="text-2xl" />
           </a>
         </div>

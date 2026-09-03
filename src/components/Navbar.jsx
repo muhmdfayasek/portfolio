@@ -31,7 +31,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#home"
-                  class="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:mr-7 md:mb-0 md:mr-3"
+                  className="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:mr-7 md:mb-0 md:mr-3"
                 >
                   Home
                 </a>
@@ -39,7 +39,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#about"
-                  class="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
+                  className="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
                 >
                   About
                 </a>
@@ -47,7 +47,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#skills"
-                  class="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
+                  className="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
                 >
                   Skills
                 </a>
@@ -55,7 +55,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#projects"
-                  class="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
+                  className="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
                 >
                   Projects
                 </a>
@@ -63,7 +63,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#contact"
-                  class="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:my-7 md:mb-0 md:mr-3"
+                  className="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:my-7 md:mb-0 md:mr-3"
                 >
                   Contact
                 </a>

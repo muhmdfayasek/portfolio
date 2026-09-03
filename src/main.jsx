@@ -8,3 +8,6 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
+
+// Tell the loader that React has initialized.
+window.dispatchEvent(new Event("react-ready"));

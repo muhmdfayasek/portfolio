@@ -1,49 +1,100 @@
 @import "tailwindcss";
 
 @theme {
-  /* === CORE BACKGROUNDS === */
-  --color-background:        #080808;   /* Main page background */
-  --color-surface:           #111111;   /* Cards, navbar, panels, skill boxes */
-  --color-surface-hover:     #1a1a1a;   /* Hover state for cards/buttons */
-  --color-surface-elevated:  #181818;   /* Modals, overlays, project cards */
+    /* === CORE BACKGROUNDS === */
+    --color-background: #080808; /* Main page background */
+    --color-surface: #111111; /* Cards, navbar, panels, skill boxes */
+    --color-surface-hover: #1a1a1a; /* Hover state for cards/buttons */
+    --color-surface-elevated: #181818; /* Modals, overlays, project cards */
 
-  /* === BORDERS === */
-  --color-border:            #272727;   /* Subtle borders (skill cards, dividers) */
-  --color-border-hover:      #3a3a3a;   /* Hover borders */
-  --color-border-strong:     #4a4a4a;   /* Focus rings, active states */
+    /* === BORDERS === */
+    --color-border: #272727; /* Subtle borders (skill cards, dividers) */
+    --color-border-hover: #3a3a3a; /* Hover borders */
+    --color-border-strong: #4a4a4a; /* Focus rings, active states */
 
-  /* === TEXT HIERARCHY === */
-  --color-text-primary:      #ffffff;   /* Headings, important text */
-  --color-text-secondary:    #d4d4d4;   /* Body text, descriptions */
-  --color-text-tertiary:     #a3a3a3;   /* Supporting text, labels */
-  --color-text-muted:        #737373;   /* Least important, meta info */
-  --color-text-inverse:      #080808;   /* Text on light backgrounds */
+    /* === TEXT HIERARCHY === */
+    --color-text-primary: #ffffff; /* Headings, important text */
+    --color-text-secondary: #d4d4d4; /* Body text, descriptions */
+    --color-text-tertiary: #a3a3a3; /* Supporting text, labels */
+    --color-text-muted: #737373; /* Least important, meta info */
+    --color-text-inverse: #080808; /* Text on light backgrounds */
 
-  /* === ACCENT (Indigo family - refined) === */
-  --color-accent:            #6a7282;   /* Primary brand - links, active nav, buttons */
-  --color-accent-hover:      #a5b4fc;   /* Hover states */
-  --color-accent-muted:      #364153;   /* Subtle backgrounds, badges */
-  --color-accent-soft:       #4f46e5;   /* Focus rings, borders */
-  --color-accent-strong:     #4338ca;   /* Active/pressed states */
+    /* === ACCENT (Indigo family - refined) === */
+    --color-accent: #6a7282; /* Primary brand - links, active nav, buttons */
+    --color-accent-hover: #a5b4fc; /* Hover states */
+    --color-accent-muted: #364153; /* Subtle backgrounds, badges */
+    --color-accent-soft: #4f46e5; /* Focus rings, borders */
+    --color-accent-strong: #4338ca; /* Active/pressed states */
 
-  /* === SEMANTIC STATES === */
-  --color-success:           #4ade80;
-  --color-success-muted:     #166534;
-  --color-warning:           #facc15;
-  --color-warning-muted:     #854d0e;
-  --color-error:             #f87171;
-  --color-error-muted:       #991b1b;
+    /* === SEMANTIC STATES === */
+    --color-success: #4ade80;
+    --color-success-muted: #166534;
+    --color-warning: #facc15;
+    --color-warning-muted: #854d0e;
+    --color-error: #f87171;
+    --color-error-muted: #991b1b;
 
-  /* === LEGACY ALIASES (for gradual migration) === */
-  --color-gray-950:          #030712;
-  --color-slate-800:         #1e293b;
-  --color-slate-900:         #0f172a;
+    /* === LEGACY ALIASES (for gradual migration) === */
+    --color-gray-950: #030712;
+    --color-slate-800: #1e293b;
+    --color-slate-900: #0f172a;
 }
 
+/* Loader css */
+#initial-loader {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: black;
+    color: #f5f5f5;
+
+    transition: opacity 400ms ease;
+}
+
+#initial-loader.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loader-content {
+    text-align: center;
+    font-family: monospace;
+}
+
+#loader-status {
+    font-size: 7rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    margin-left: 19px;
+}
+
+#loader-message {
+    font-size: 1.3rem;
+}
+
+#loader-text {
+    margin-top: 0.75rem;
+    color: #737373;
+    font-size: 1rem;
+}
+
+.status-404 {
+    color: #f87171;
+}
+
+.status-200 {
+    color: #4ade80;
+}
+
+/* React css */
 footer {
-    -webkit-box-shadow: 3px 2px 17px -2px rgba(252,254,255,0.15); 
-    box-shadow: 3px 2px 17px -2px rgba(252,254,255,0.15);
+    -webkit-box-shadow: 3px 2px 17px -2px rgba(252, 254, 255, 0.15);
+    box-shadow: 3px 2px 17px -2px rgba(252, 254, 255, 0.15);
 }
 
 .animate-fade-in {

@@ -1,14 +1,115 @@
 <!doctype html>
-<html lang="en" style="scroll-behavior: smooth;">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/react.svg" />
-    <link rel="stylesheet" href="src/index.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>muhmdfayasek</title>
-  </head>
-  <body class="bg-black text-white">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<html lang="en" style="scroll-behavior: smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/react.svg" />
+        <link rel="stylesheet" href="src/index.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>muhmdfayasek</title>
+    </head>
+    <body class="bg-black text-white">
+        <!-- Loader -->
+        <div id="initial-loader">
+            <div class="loader-content">
+                <div id="loader-status">404</div>
+                <div id="loader-message">Searching....</div>
+                <div id="loader-text">Porfolio Not Found</div>
+            </div>
+        </div>
+
+        <!-- React Root -->
+        <div id="root"></div>
+        <script>
+            const loader = document.getElementById("initial-loader");
+            const status = document.getElementById("loader-status");
+            const message = document.getElementById("loader-message");
+            const loaderText = document.getElementById("loader-text");
+
+            const startTime = performance.now();
+            let reactReady = false;
+            let animationFinished = false;
+
+            function finishLoader() {
+                if (!reactReady || !animationFinished) return;
+
+                loader.classList.add("hide");
+
+                setTimeout(() => {
+                    loader.remove();
+                }, 400);
+            }
+
+            function setStatus(text) {
+                status.textContent = text;
+
+                status.classList.remove("status-404", "status-200");
+
+                if (text === "404") {
+                    status.classList.add("status-404");
+                } else if (text === "200") {
+                    status.classList.add("status-200");
+                }
+            }
+
+            // Tell the loader that React has loaded.
+            window.addEventListener("react-ready", () => {
+                reactReady = true;
+                finishLoader();
+            });
+
+            // Animation
+            const sequence = [
+                {
+                    time: 0,
+                    status: "404",
+                    message: "Searching...",
+                    loaderText: "Portfolio Not Found",
+                },
+                {
+                    time: 500,
+                    status: "4_4",
+                    message: "Looking for developer...",
+                    loaderText: "Portfolio Not Found",
+                },
+                {
+                    time: 800,
+                    status: "_04",
+                    message: "Almost there...",
+                    loaderText: "Portfolio Searching",
+                },
+                {
+                    time: 1100,
+                    status: "200",
+                    message: "Developer found.",
+                    loaderText: "Portfolio Found",
+                },
+                {
+                    time: 1500,
+                    status: "200",
+                    message: "200: Found Him",
+                    loaderText: "Portfolio Loading",
+                },
+            ];
+
+            sequence.forEach((step) => {
+                setTimeout(() => {
+                    setStatus(step.status);
+                    status.textContent = step.status;  // 404
+                    message.textContent = step.message;  // Searching...
+                    loaderText.textContent = step.loaderText;  // Portfolio Not Found
+                }, step.time);
+            });
+
+            // Ensure the animation takes at least 2 seconds.
+            setTimeout(() => {
+                animationFinished = true;
+                finishLoader();
+            }, 2000);
+        </script>
+        <script type="module" src="/src/main.jsx"></script>
+    </body>
 </html>
