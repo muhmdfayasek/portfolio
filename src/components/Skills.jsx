@@ -5,7 +5,7 @@ function SkillCard({ icon, title }) {
   return (
     <div className="animate-fade-in delay-200 border border-border flex flex-col justify-center items-center p-5 hover:border-accent-hover hover:bg-surface-hover transition">
       <Icon icon={icon} className="text-5xl" />
-      <p className="text-text-tertiary mt-2">{title}</p>
+      <p className="text-text-tertiary mt-2 font-fira">{title}</p>
     </div>
   );
 }
@@ -17,7 +17,7 @@ export default function Skills() {
         <div className="text-center mb-16">
           <h2 className="font-bold text-3xl mb-4 animate-fade-in">My Skills</h2>
           <div className="w-20 h-1 bg-accent-soft mx-auto animate-fade-in delay-150"></div>
-          <p className="text-text-tertiary max-w-2xl mx-auto mt-6 animate-fade-in"
+          <p className="text-text-tertiary font-fira max-w-2xl mx-auto mt-6 animate-fade-in"
           >I've developed expertise in various technologies through
             continuous learning and hands-on projects.</p>
         </div>

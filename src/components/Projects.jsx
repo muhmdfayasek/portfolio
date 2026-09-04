@@ -19,7 +19,7 @@ function ProjectCard(props) {
       </div>
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{props.title}</h3>
-        <p className="text-gray-300 mb-4">{props.description}</p>
+        <p className="text-gray-300 font-fira mb-4">{props.description}</p>
         <div className="flex flex-wrap gap-2">
           {props.children}
         </div>
@@ -35,7 +35,7 @@ export default function Projects() {
         <div className="text-center mb-15">
           <h2 className="text-3xl font-bold mb-4 animate-fade-in">Projects</h2>
           <div className="w-20 h-1 bg-accent-soft mx-auto animate-fade-in delay-100"></div>
-          <p className="text-gray-300 max-w-2xl mx-auto mt-6 animate-fade-in delay-200">
+          <p className="text-text-tertiary font-fira max-w-2xl mx-auto mt-6 animate-fade-in delay-200">
             Here are some of my recent projects showcasing my diverse skill set.
           </p>
         </div>

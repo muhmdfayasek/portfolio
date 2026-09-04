@@ -24,14 +24,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 z-10">
           <div className="text-center">
             <div className="animate-fade-in">
-              <h1 className="font-bold text-text-primary text-5xl md:text-6xl mb-4">
+              <h1 className="font-bold font-rock-salt text-text-primary text-5xl md:text-6xl mb-8">
                 Muhammed Fayas EK
               </h1>
               <h2 className="text-accent-primary text-xl md:text-2xl mb-8">
                 {" "}
                 Fontend Developer | Open Source Enthuasist | n8n Automation
               </h2>
-              <p className="text-lg max-w-2xl mx-auto mb-8 text-shadow-2xs text-shadow-border text-text-secondary">
+              <p className="text-lg max-w-2xl mx-auto mb-8 text-shadow-2xs text-shadow-border text-text-secondary font-fira">
                 Living in a world of bugs, ideas, and endless curiosity.
                 <br />
                 Building things I probably could have just left alone.

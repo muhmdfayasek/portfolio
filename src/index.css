@@ -39,6 +39,11 @@
     --color-gray-950: #030712;
     --color-slate-800: #1e293b;
     --color-slate-900: #0f172a;
+
+    /* === Fonts === */
+    --font-jetbrains: 'JetBrains Mono', monospace;
+    --font-fira: 'Fira Code', monospace;
+    --font-rock-salt: 'Rock Salt', cursive;
 }
 
 /* Loader css */
@@ -68,10 +73,14 @@
 }
 
 #loader-status {
-    font-size: 7rem;
+    font-size: 8rem;
     font-weight: 700;
     letter-spacing: 0.15em;
     margin-left: 19px;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #loader-message {

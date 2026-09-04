@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <nav className="fixed top-0 border-solid border-border w-full lg:h-17 border-b py-2 lg:py-0 bg-surface z-50 shadow-2xl">
+    <nav className="fixed top-0 border-solid border-border w-full lg:h-17 border-b py-2 lg:py-0 bg-surface z-50 shadow-2xl font-jetbrains">
       <div className="mx-auto max-w-7xl px-4">
         <div className="w-full flex flex-col lg:flex-row">
           <div className="flex justify-between items-center lg:h-17">

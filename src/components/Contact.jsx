@@ -68,7 +68,7 @@ export default function Contact() {
             Get in Touch
           </h2>
           <div className="w-20 h-1 bg-accent-soft mx-auto animate-fade-in delay-100"></div>
-          <p className="text-text-tertiary max-w-2xl mx-auto mt-8 animate-fade-in delay-200">
+          <p className="text-text-tertiary font-fira max-w-2xl mx-auto mt-8 animate-fade-in delay-200">
             Have a project in mind or want to discuss potential opportunities?
             Feel free to reach out!
           </p>
@@ -182,7 +182,7 @@ export default function Contact() {
                     <h4 className="font-semibold text-text-primary">
                       Location
                     </h4>
-                    <p className="text-text-tertiary text-sm md:text-md">
+                    <p className="text-text-tertiary text-sm md:text-md font-fira">
                       Pattambi, Kerala, India
                     </p>
                   </div>
@@ -192,7 +192,7 @@ export default function Contact() {
                   <IconRing icon="carbon:email" size="text-xl" />
                   <div className="text-pretty">
                     <h4 className="font-semibold text-text-primary">Email</h4>
-                    <p className="text-text-tertiary text-sm md:text-md break-all">
+                    <p className="text-text-tertiary text-sm md:text-md break-all font-fira">
                       muhmdfayasek.work@protonmail.com
                     </p>
                   </div>
@@ -204,7 +204,7 @@ export default function Contact() {
                   </a>
                   <div>
                     <h4 className="font-semibold text-text-primary">Message</h4>
-                    <p className="text-text-tertiary text-sm md:text-md">t.me/muhmdfayasek</p>
+                    <p className="text-text-tertiary text-sm md:text-md font-fira">t.me/muhmdfayasek</p>
                   </div>
                 </div>
               </div>

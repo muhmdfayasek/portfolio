@@ -17,7 +17,7 @@ export default function About() {
           <div className="md:w-2/3 animate-fade-in delay-300">
             {/* Introduction */}
             <h3 className="font-semibold text-2xl mb-4 mt-10">Wait, Who's This Guy?</h3>
-            <p className="text-text-tertiary mb-6">
+            <p className="text-text-tertiary mb-6 font-fira">
               I’m Muhammed Fayas EK, a BCA student and developer who enjoys turning ideas into real, working projects. I like learning by building, experimenting with new technologies, and occasionally creating problems just so I can figure out how to fix them. I’m also interested in open source and enjoy exploring, contributing to, and learning from the work of developers around the world.
             </p>
 
@@ -27,7 +27,7 @@ export default function About() {
                 <IconRing icon="fa6-solid:graduation-cap" size="text-md"/>
                 <div>
                   <h4 className="font-semibold text-text-primary">Education</h4>
-                  <p className="text-text-secondary">
+                  <p className="text-text-secondary font-fira">
                     Bachelor of Computer Applications<br />
                     SAFA College of Arts and Science Pookattiri <span>(Ongoing)</span>
                   </p>
@@ -38,7 +38,7 @@ export default function About() {
                 <IconRing icon="fa6-solid:briefcase" size="text-md"/>
                 <div>
                   <h4 className="font-semibold text-text-primary">Experience</h4>
-                  <p className="text-text-secondary">
+                  <p className="text-text-secondary font-fira">
                     One year of experience in breaking and fixing my own system
                   </p>
                 </div>
@@ -48,7 +48,7 @@ export default function About() {
                 <IconRing icon="fa6-solid:code" size="text-md"/>
                 <div>
                   <h4 className="font-semibold text-text-primary">Specialization</h4>
-                  <p className="text-text-secondary">
+                  <p className="text-text-secondary font-fira">
                     Frontend Development<br />
                     Linux
                   </p>
@@ -59,7 +59,7 @@ export default function About() {
                 <IconRing icon="fa6-solid:globe" size="text-md"/>
                 <div>
                   <h4 className="font-semibold text-text-primary">Languages</h4>
-                  <p className="text-text-secondary">
+                  <p className="text-text-secondary font-fira">
                     English, Malayalam
                   </p>
                 </div>
