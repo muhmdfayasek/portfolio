@@ -33,7 +33,6 @@ export default function Contact() {
   };
 
   const onSubmit = async (data) => {
-    toast("Sending....");
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
