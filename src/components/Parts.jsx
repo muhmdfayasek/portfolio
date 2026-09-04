@@ -26,7 +26,7 @@ function BackToTopBtn() {
     visible && (
       <button
         onClick={scrollToTop}
-        className="fixed bottom-10 right-10 size-12 bg-accent-soft text-text-primary rounded-full shadow-lg flex items-center justify-center hover:bg-accent-strong z-100"
+        className="fixed bottom-10 right-5 md:right-10 size-12 bg-accent-soft text-text-primary rounded-full shadow-lg flex items-center justify-center hover:bg-accent-strong z-100"
         aria-label="Back to top">
         <Icon icon="material-symbols:arrow-upward" className="text-xl" />
       </button>
