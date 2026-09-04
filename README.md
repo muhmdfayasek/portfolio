@@ -19,7 +19,8 @@ A modern, minimal personal portfolio website built with React, Vite, and Tailwin
 - **Tailwind CSS v4** (custom design tokens)
 - **tsParticles** for animated background
 - **Iconify** for icons
-- **Resend** + **Vercel Functions** for contact form
+- **Google Fonts** for typography
+- **Web3Forms** + **hCaptcha** for contact form
 - **pnpm** package manager
 - **Flowbite** design ideas
 
@@ -28,12 +29,20 @@ A modern, minimal personal portfolio website built with React, Vite, and Tailwin
 ```
 src/
 ├── components/     # Navbar, Home, About, Skills, Projects, Contact, Footer, Parts
+|   ├── About.jsx
+|   ├── Contact.jsx
+|   ├── Footer.jsx
+|   ├── Home.jsx
+|   ├── Navbar.jsx
+|   ├── Parts.jsx
+|   ├── Projects.jsx
+|   └── Skills.jsx
 ├── lib/            # Particle configuration
+|   └── particles.js
 ├── App.jsx         # Main app composition
 ├── main.jsx        # Entry point
 └── index.css       # Tailwind v4 theme + globals
-api/
-└── contact/        # Vercel serverless function
+
 ```
 
 ## Scripts
@@ -50,4 +59,4 @@ pnpm lint     # Run ESLint
 **Muhammed Fayas EK**
 - GitHub: [@muhmdfayasek](https://github.com/muhmdfayasek)
 - LinkedIn: [muhmdfayasek](https://linkedin.com/in/muhmdfayasek)
-- Email: muhmdfayasek@outlook.com
+- Email: muhmdfayasek.work@protonmail.com
