@@ -44,6 +44,7 @@
     --font-jetbrains: 'JetBrains Mono', monospace;
     --font-fira: 'Fira Code', monospace;
     --font-rock-salt: 'Rock Salt', cursive;
+    --font-ibm-plex: 'IBM Plex Sans JP', sans-serif;
 }
 
 /* Loader css */
@@ -69,7 +70,9 @@
 
 .loader-content {
     text-align: center;
-    font-family: monospace;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 #loader-status {
@@ -77,10 +80,6 @@
     font-weight: 700;
     letter-spacing: 0.15em;
     margin-left: 19px;
-    font-family: "JetBrains Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
 }
 
 #loader-message {
@@ -91,6 +90,18 @@
     margin-top: 0.75rem;
     color: #737373;
     font-size: 1rem;
+}
+
+.joke-text {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    color: #737373;
+    font-family: monospace;
+    font-size: large;
 }
 
 .status-404 {

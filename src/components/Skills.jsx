@@ -38,6 +38,7 @@ export default function Skills() {
           <SkillCard icon="simple-icons:penpot" title="Penpot" />
           <SkillCard icon="devicon:supabase" title="Supabase" />
           <SkillCard icon="selfhst:n8n" title="n8n" />
+          <SkillCard icon="devicon:podman" title="Podman" />
         </div>
       </div>
     </section>

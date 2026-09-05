@@ -1,4 +1,4 @@
-// Black & white particle config, matches the dark body background
+// Black & red particle config, matches the dark body background
 const particleOptions = {
   fullScreen: false,
   background: {
@@ -35,11 +35,11 @@ const particleOptions = {
       value: "#ffffff",
     },
     links: {
-      color: "#ffffff",
+      color: "#ff3b3b",
       distance: 150,
       enable: true,
       opacity: 0.3,
-      width: 1,
+      width: 2,
     },
     move: {
       direction: "none",

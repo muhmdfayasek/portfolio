@@ -39,13 +39,13 @@ export default function Home() {
               <div className="flex justify-center gap-8 mt-4 pt-2">
                 <a
                   href="#contact"
-                  className="px-6 py-3 bg-gray-500 text-text-primary rounded-lg hover:bg-text-primary hover:text-text-inverse transition shadow-lg"
+                  className="px-6 py-3 bg-gray-500 text-text-primary rounded-lg hover:bg-text-primary hover:text-text-inverse transition shadow-lg font-ibm-plex"
                 >
                   Let's Talk
                 </a>
                 <a
                   href="#projects"
-                  className="px-6 py-3 border border-text-primary rounded-lg hover:bg-text-primary hover:text-text-inverse transition"
+                  className="px-6 py-3 border border-text-primary rounded-lg hover:bg-text-primary hover:text-text-inverse transition font-ibm-plex"
                 >
                   View Projects
                 </a>

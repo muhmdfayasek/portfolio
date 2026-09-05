@@ -9,7 +9,7 @@ function SocialIcon(props) {
   return (
     <a
       href={props.link}
-      className="text-text-primary w-10 h-10 bg-accent-muted rounded-full flex items-center justify-center"
+      className="text-text-primary size-10 shrink-0 bg-accent-muted rounded-full flex items-center justify-center md:size-12"
     >
       <Icon icon={props.icon} />
       <span className="sr-only">{props.label}</span>
@@ -94,7 +94,7 @@ export default function Contact() {
                 <input
                   type="text"
                   id="name"
-                  name="name"
+                  placeholder="Muhammed Fayas EK"
                   {...register("name")}
                   required
                   className="w-full px-4 py-3 outline-none border border-border rounded-lg focus:ring-1 focus:ring-accent-soft focus:border-accent-soft transition"
@@ -110,7 +110,7 @@ export default function Contact() {
                 <input
                   type="email"
                   id="email"
-                  name="email"
+                  placeholder="muhmdfayasek@example.com"
                   {...register("email")}
                   required
                   className="w-full px-4 py-3 outline-none border border-border rounded-lg focus:ring-1 focus:ring-accent-soft focus:border-accent-soft transition"
@@ -126,7 +126,7 @@ export default function Contact() {
                 <input
                   type="text"
                   id="subject"
-                  name="subject"
+                  placeholder="Call for nothing"
                   {...register("subject")}
                   required
                   className="w-full px-4 py-3 outline-none border border-border rounded-lg focus:ring-1 focus:ring-accent-soft focus:border-accent-soft transition"
@@ -141,7 +141,7 @@ export default function Contact() {
                 </label>
                 <textarea
                   id="message"
-                  name="message"
+                  placeholder="Your message here..."
                   {...register("message")}
                   required
                   className="w-full px-4 py-3 outline-none border border-border rounded-lg focus:ring-1 focus:ring-accent-soft focus:border-accent-soft transition"
@@ -159,7 +159,7 @@ export default function Contact() {
               {/* Submit button */}
               <button
                 type="submit"
-                className="w-full px-6 py-3 bg-accent rounded-lg shadow-lg transition hover:bg-text-primary hover:text-text-inverse"
+                className="w-full px-6 py-3 font-ibm-plex bg-accent rounded-lg shadow-lg transition hover:bg-text-primary hover:text-text-inverse"
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </button>
@@ -211,7 +211,7 @@ export default function Contact() {
               {/* Social media Profiles */}
               <div className="mt-8">
                 <h4 className="font-semibold text-text-primary">Follow Me</h4>
-                <div className="flex space-x-4 mt-4">
+                <div className="flex flex-wrap gap-3 mt-4">
                   <SocialIcon
                     link="https://github.com/muhmdfayasek"
                     icon="bi:github"
@@ -246,6 +246,18 @@ export default function Contact() {
                     link="https://x.com/muhmdfayasek"
                     icon="bi:twitter-x"
                     label="X(Twitter) Profile"
+                  />
+
+                  <SocialIcon
+                    link="https://www.fiverr.com/s/emRvbBj"
+                    icon="ri:fiverr-fill"
+                    label="Fiverr Profile"
+                  />
+
+                  <SocialIcon
+                    link="https://www.rave.works/profile/muhmdfayasek"
+                    icon="bi:globe"
+                    label="Rave Profile"
                   />
                 </div>
               </div>

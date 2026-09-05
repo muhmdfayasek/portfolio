@@ -3,11 +3,11 @@ import { useState } from "react";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <nav className="fixed top-0 border-solid border-border w-full lg:h-17 border-b py-2 lg:py-0 bg-surface z-50 shadow-2xl font-jetbrains">
+    <nav className="fixed top-0 border-solid border-border w-full lg:h-17 border-b py-2 lg:py-0 bg-surface z-50 shadow-2xl">
       <div className="mx-auto max-w-7xl px-4">
         <div className="w-full flex flex-col lg:flex-row">
           <div className="flex justify-between items-center lg:h-17">
-            <a href="/" className="font-bold text-xl md:px-10 md:text-2xl p-2">
+            <a href="/" className="font-bold font-jetbrains text-xl md:px-10 md:text-2xl p-2">
               muhmdfayasek
             </a>
 
@@ -31,7 +31,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#home"
-                  className="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:mr-7 md:mb-0 md:mr-3"
+                  className="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium font-ibm-plex hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:mr-7 md:mb-0 md:mr-3"
                 >
                   Home
                 </a>
@@ -39,7 +39,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#about"
-                  className="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
+                  className="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium font-ibm-plex hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
                 >
                   About
                 </a>
@@ -47,7 +47,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#skills"
-                  className="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
+                  className="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium font-ibm-plex hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
                 >
                   Skills
                 </a>
@@ -55,7 +55,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#projects"
-                  className="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
+                  className="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium font-ibm-plex hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
                 >
                   Projects
                 </a>
@@ -63,7 +63,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#contact"
-                  className="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:my-7 md:mb-0 md:mr-3"
+                  className="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium font-ibm-plex hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:my-7 md:mb-0 md:mr-3"
                 >
                   Contact
                 </a>
