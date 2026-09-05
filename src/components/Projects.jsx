@@ -43,7 +43,7 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           
           <ProjectCard
-            image="/src/assets/qeydrop.webp"
+            image="/qeydrop.webp"
             link="https://github.com/muhmdfayasek/QeyDrop"
             title="QeyDrop"
             description="A vibecoded platform for content creators to share links with audience"
