@@ -41,13 +41,14 @@ export default function Footer() {
       
       {/* Tools and other resouces i used in this project */}
         <div className="text-sm mx-5 mb-5 mt-2 text-center">
-        <a href="https://zed.dev/">zed.dev </a> | 
-        <a href="https://tailwindcss.com/"> Tailwind CSS </a> |
-        <a href="https://flowbite.com/"> Flowbite </a> |
-        <a href="https://iconify.design/"> Iconify [ Devicon | selfh.st | Bootstrap Icons | Akar Icons | Font Awesome 6 | Carbon | Remix Icons ] | </a>
-        <a href="https://fonts.google.com"> Google Fonts [ Jet Brains Mono | Fira Code | Rock Salt | IBM Plex Sans ] | </a>
+        <a href="https://zed.dev/">zed.dev | </a>
+        <a href="https://tailwindcss.com/"> Tailwind CSS | </a>
+        <a href="https://flowbite.com/"> Flowbite | </a>
+        <a href="https://iconify.design/"> Iconify | </a>
+        <a href="https://fonts.google.com"> Google Fonts | </a>
         <a href="https://web3forms.com"> Web3Forms & hCaptcha | </a>
-        <a href="https://openrouter.ai"> OpenRouter</a>
+        <a href="https://openrouter.ai"> OpenRouter | </a>
+        <a href="https://opencode.ai"> OpenCode </a>
         </div>
     </footer>
   );
