@@ -14,7 +14,12 @@ function ProjectCard(props) {
         <img src={props.image} alt="project-image" className="w-full h-full object-cover" />
         
         <div className="project-overlay absolute inset-0 bg-accent/90 flex items-center justify-center opacity-0 transition duration-300">
-          <a href={props.link} className="text-text-primary font-ibm-plex bg-accent-soft px-4 py-2 border border-text-primary rounded-lg hover:bg-white hover:text-text-inverse">View Details</a>  
+          <a
+            href={props.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-text-primary font-ibm-plex bg-accent-soft px-4 py-2 border border-text-primary rounded-lg hover:bg-white hover:text-text-inverse"
+          >View Details</a>  
         </div>
       </div>
       <div className="p-6">
@@ -58,6 +63,8 @@ export default function Projects() {
         <div className="text-center mt-20 animate-fade-in delay-300">
           <a
             href="https://github.com/muhmdfayasek?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-text-primary font-ibm-plex px-6 py-3 border border-text-primary rounded-lg hover:text-text-inverse hover:bg-text-primary hover:border-text-primary"
           >View all Projects</a>
         </div>

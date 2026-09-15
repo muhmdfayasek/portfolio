@@ -9,6 +9,8 @@ function SocialIcon(props) {
   return (
     <a
       href={props.link}
+      target="_blank"
+      rel="noopener noreferrer"
       className="text-text-primary size-10 shrink-0 bg-accent-muted rounded-full flex items-center justify-center md:size-12"
     >
       <Icon icon={props.icon} />
@@ -18,8 +20,11 @@ function SocialIcon(props) {
 }
 
 export default function Contact() {
+
+  // API keys
   const accessKey = import.meta.env.VITE_ACCESS_KEY;
   const siteKey = import.meta.env.VITE_SITE_KEY;
+  
   const {
     register,
     handleSubmit,
@@ -32,6 +37,7 @@ export default function Contact() {
     setValue("h-captcha-response", token);
   };
 
+  // Form submission
   const onSubmit = async (data) => {
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -50,7 +56,7 @@ export default function Contact() {
       } else {
         toast.error("Something went wrong.");
       }
-    } catch (error) {
+    } catch (error) {   // Error handling
       console.error(error)
       toast.error("Failed to send message. Please try again.");
     }  
@@ -198,7 +204,11 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start">
-                  <a href="https://t.me/muhmdfayasek">
+                  <a
+                    href="https://t.me/muhmdfayasek"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <IconRing icon="bi:telegram" size="text-xl" />
                   </a>
                   <div>
@@ -237,7 +247,7 @@ export default function Contact() {
                   />
 
                   <SocialIcon
-                    link="https://www.facebook.com/muhmdfayasek"
+                    link="https://www.facebook.com/muhmdfayasek.fb"
                     icon="bi:facebook"
                     label="Facebook Profile"
                   />
