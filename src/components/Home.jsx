@@ -57,7 +57,10 @@ export default function Home() {
           </div>
         </div>
         <div className="absolute bottom-10 left-0 right-0 text-center chevron-down">
-          <a href="#about" className="inline-block animate-bounce">
+          <a
+            href="#about"
+            onClick={(event) => linkHandler(event, 'about')}
+            className="inline-block animate-bounce">
             <Icon icon="akar-icons:chevron-down" className="text-2xl" />
           </a>
         </div>
