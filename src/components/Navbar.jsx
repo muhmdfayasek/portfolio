@@ -2,7 +2,16 @@ import { useState } from "react";
 import linkHandler from "../lib/linkHandler";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleNavClick = (event, sectionId) => {
+    setIsOpen(false);
+
+    if (sectionId) {
+      linkHandler(event, sectionId);
+    }
+  };
+  
   return (
     <nav className="fixed top-0 border-solid border-border w-full lg:h-17 border-b py-2 lg:py-0 bg-surface z-50 shadow-2xl">
       <div className="mx-auto max-w-7xl px-4">
@@ -32,7 +41,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#about"
-                  onClick={(event) => linkHandler(event, 'about')}
+                  onClick={(event) => handleNavClick(event, 'about')}
                   className="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium font-ibm-plex hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
                 >
                   About
@@ -41,7 +50,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#skills"
-                  onClick={(event) => linkHandler(event, 'skills')}
+                  onClick={(event) => handleNavClick(event, 'skills')}
                   className="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium font-ibm-plex hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
                 >
                   Skills
@@ -50,7 +59,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#projects"
-                  onClick={(event) => linkHandler(event, 'projects')}
+                  onClick={(event) => handleNavClick(event, 'projects')}
                   className="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium font-ibm-plex hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3"
                 >
                   Projects
@@ -59,7 +68,7 @@ export default function Navbar() {
               <li>
                 <a
                   href="#contact"
-                  onClick={(event) => linkHandler(event, 'contact')}
+                  onClick={(event) => handleNavClick(event, 'contact')}
                   className="flex items-center justify-between text-text-primary text-[15px] lg:text-base font-medium font-ibm-plex hover:text-text-tertiary hover:border-b-2 hover:border-accent-hover transition-all duration-500 mb-2 lg:my-7 md:mb-0 md:mr-3"
                 >
                   Contact

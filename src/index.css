@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "react-toastify/dist/ReactToastify.css";
 
+@custom-variant short (@media (max-height: 699px));
+@custom-variant tiny-640 (@media (max-height: 640px));
+@custom-variant tiny-600 (@media (max-height: 600px));
+
 @theme {
     /* === CORE BACKGROUNDS === */
     --color-background: #080808; /* Main page background */
@@ -126,14 +130,9 @@ footer {
     opacity: 0.8;
 }
 
-@media (max-height: 502px) {
+@media (max-height: 735px) {
     .chevron-down {
-        display: none;
+        bottom: 0.5rem;
     }
 }
 
-@media (max-height: 590px) {
-    .chevron-down {
-        bottom: 1.25rem;
-    }
-}
