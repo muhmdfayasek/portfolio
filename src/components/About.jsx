@@ -12,7 +12,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/3 animate-fade-in delay-200">
             <div className="text-center">
-              <img src="/profile.webp" alt="Profile" className="w-full min-h-50 max-h-full ml-3 mt-10 rounded-full shadow-xl shadow-slate-950 border-accent-hover border-4"/>
+              <img src="/profile.webp" alt="Profile" className="w-full min-h-50 max-h-full mt-10 rounded-full shadow-xl shadow-slate-950 border-accent-hover border-4"/>
             </div>
           </div>
           <div className="md:w-2/3 animate-fade-in delay-300">
@@ -30,7 +30,7 @@ export default function About() {
                   <h4 className="font-semibold text-text-primary">Education</h4>
                   <p className="text-text-secondary font-fira">
                     Bachelor of Computer Applications<br />
-                    SAFA College of Arts and Science Pookattiri <span>(Ongoing)</span>
+                    <span>(Ongoing)</span>
                   </p>
                 </div>
               </div>
