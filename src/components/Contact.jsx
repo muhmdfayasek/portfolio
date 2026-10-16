@@ -205,7 +205,7 @@ export default function Contact() {
 
                 <div className="flex items-start">
                   <a
-                    href="https://t.me/muhmdfayasek"
+                    href="https://signal.me/#eu/xT8HtLpmm3cIu2SCEDsUotRXssGrzLjLBD5c6htx9hhq08g9WMJG3Jmtc5exrIf7"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -213,7 +213,7 @@ export default function Contact() {
                   </a>
                   <div>
                     <h4 className="font-semibold text-text-primary">Message</h4>
-                    <p className="text-text-tertiary text-sm md:text-md font-fira">t.me/muhmdfayasek</p>
+                    <p className="text-text-tertiary text-sm md:text-md font-fira">Message me on Signal</p>
                   </div>
                 </div>
               </div>
